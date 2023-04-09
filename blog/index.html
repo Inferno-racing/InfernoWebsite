@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Our Journey</title>
+    <title>Inferno Racing</title>
     <link rel="stylesheet" href="https://Inferno-racing.github.io/InfernoWebsite/main.css">
   </head>
-  <nav>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="https://Inferno-racing.github.io/InfernoWebsite/blog/index.html">Blog</a></li>
-<ul class="posts">
-  {% for post in site.post %}
-  <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}</a></li>
-  {% endfor %}
-    </ul>  
-</html>
+  <body>
+    <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="https://Inferno-racing.github.io/InfernoWebsite/blog/index.html">Blog</a></li>
+      {% for post in "https://Inferno-racing.github.io/InfernoWebsite/_posts" %}
+      <li><span>{{ post.date | date_to_string }}</span><a href="{{ post.url }}" title="{{ post.title }}"</a></li>
+    </ul>
+    </nav>
+    <div class="container">
+    <div class="blurb">
+      <h1>Our Journey </h1>
+    </div>
+    </div>
+    <footer>
+    <ul>
+      <li><a href="https://github.com/Inferno-racing">github.com/Inferno-racing</a></li>
+    </ul>
+    </footer>
+  </body>
+</html>  
