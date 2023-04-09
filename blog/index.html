@@ -12,6 +12,7 @@
       <li><a href="https://Inferno-racing.github.io/InfernoWebsite/blog/index.html">Blog</a></li>
       {% for post in "https://Inferno-racing.github.io/InfernoWebsite/_posts" %}
       <li><span>{{ post.date | date_to_string }}</span><a href="{{ post.url }}" title="{{ post.title }}"</a></li>
+      {% endfor % }
     </ul>
     </nav>
     <div class="container">
